@@ -1,1 +1,29 @@
-/* Здесь должны быть общие стили для унификации в разных браузерах. Удалите этот комментарий при начала разработки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 98%;
+    border: black solid 0.12vw;;
+    margin-left: 1%;
+    font-size: 16px;
+}
+
+button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    background: #FB4B4D;
+    border: none;
+    color: white;
+}
+h1,
+h2 {
+    text-align: center;
+    font-weight: bold;
+}

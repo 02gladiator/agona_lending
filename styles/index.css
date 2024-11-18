@@ -1,1 +1,307 @@
-/* Здесь будут ваши стили для элементов лендинга. Удалите этот комментарий при начала разработки */
+header {
+    position: fixed;
+    top: 0;
+    margin-left: 0;
+    border-bottom: black solid 0.12vw;
+    z-index: 99;
+    background-color: white;
+    width: 97vw;
+}
+
+header nav {
+    width: 95%;
+    margin-left: 3%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: inline-block;
+}
+
+header nav ul li a {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    color: black;
+}
+header img{
+    width: 10vw;
+}
+
+.preview {
+    display: flex;
+    margin-top: 6%;
+}
+
+.left_column {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    border-right: 0.12vw solid black;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container picture img {
+    max-width: 100%;
+    width: 50vw;
+    height: 30vw;
+}
+
+.scrolling_text {
+    max-width: 100%;
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.12vw solid black;
+    border-top: black solid 0.12vw;
+    font-size: 1vw;
+}
+.scrolling_text img {
+    width: 7vw;
+    height: 5vh
+}
+
+.sauce_and_cactus-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sauce_and_cactus-container img {
+    position: relative;
+    max-width: 100%;
+    width: 45vw;
+    height: 30vw;
+    margin-top: 5%;
+}
+
+.right_column {
+    width: 50%;
+    margin-right: 1%;
+    float: right;
+    display: inline-block;
+}
+
+.main_info {
+    border-bottom: black solid 0.12vw;
+}
+
+h1 {
+    margin-top: 1%;
+    font-size: 4vw;
+    text-align: center;
+
+}
+
+.sauce_and_hand-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sauce_and_hand-container img {
+    max-width: 100%;
+    width: 45vw;
+    height: 55vw;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.slogan {
+    width: 97vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: black solid 0.12vw;
+    border-bottom: black solid 0.12vw;
+}
+h2{
+    font-size: 2.5vw;
+}
+.slogan img {
+    width: 10vw;
+    height: 7vw;
+    margin-left: 1%;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    width: 3.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.product-container picture img {
+    max-width: 95%;
+    width: 31vw;
+    margin-top: -25%;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+}
+
+.text_on_sauce {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    top: 14%;
+    margin-bottom: 5%;
+}
+.text_on_sauce_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    top: 13%;
+}
+
+.scrolling_text_2 {
+    max-width: 100%;
+    width: 100vw;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.12vw solid black;
+    border-top: black solid 0.12vw;
+    font-size: 1vw;
+}
+.scrolling_text_2 img {
+    width: 7vw;
+    height: 5vh;
+}
+
+.big_photo img {
+    width: 95vw;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.story {
+    display: flex;
+    border-top: black solid 0.12vw;
+}
+
+.story_column_left {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    border-right: 0.12vw solid black;
+}
+
+.story_column_left h2 {
+    text-align: center;
+    width: 50vw;
+    height: 20vh;
+    font-size: 3.1vw;
+    margin-top: 6%;
+}
+.story_column_left img{
+    max-width: 100%;
+    width: 50vw;
+    height: 65vh;
+}
+
+.story_column_right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-right: 1%;
+    float: right;
+    position: relative;
+}
+
+.story_column_right img {
+    max-width: 100%;
+    width: 100vw;
+    height: 45vw;
+}
+
+.story_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    margin-top: 22%;
+    text-align: center;
+}
+
+.ending-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.green_fire img {
+    max-width: 100%;
+    width: 100vw;
+    margin-top: -15%;
+}
+
+.background_for_logo img {
+    max-width: 98%;
+    width: 100vw;
+    position: absolute;
+    top: 0.5%;
+    left: 1%;
+}
+
+.logo img {
+    max-width: 100%;
+    position: absolute;
+    width: 55vw;
+    height: 30vw;
+    top: 20%;
+    left: 23%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #CDFD3B;
+    border-top: black solid 0.12vw;
+    margin-top: -0.21%;
+    width: 97vw;
+    height: 3vw;
+}
+footer a{
+    display: flex;
+    align-items: center;
+    width: 1vw;
+    margin-left: 2%;
+
+}
+footer address{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 69vw;
+}
