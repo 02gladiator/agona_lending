@@ -1,1 +1,16 @@
-/* Здесь должны быть css-переменные с цветами, шрифтами. Удалите этот комментарий при начала разработки */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: lightgray;
+    }
+    header {
+        background-color: lightgray;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: white;
+    }
+    header {
+        background-color: white;
+    }
+}
