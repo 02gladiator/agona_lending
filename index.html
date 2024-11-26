@@ -6,29 +6,63 @@
     <link rel="stylesheet" href="assets/fonts/font.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li>
-                <button>GO BACK</button>
-            </li>
-            <li><a href="#">STORY</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">
-                <picture>
-                    <source srcset="pictures/icons/fire_icon.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/fire_icon.png" alt="logo">
-                </picture>
-            </a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">WHOLESALE</a></li>
-            <li>
-                <button>CLONE</button>
-            </li>
-        </ul>
-    </nav>
+    <div class="desktop_header">
+        <nav>
+            <ul>
+                <li>
+                    <button>GO BACK</button>
+                </li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">
+                    <picture>
+                        <source srcset="pictures/icons/fire_icon.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/fire_icon.png" alt="logo">
+                    </picture>
+                </a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">WHOLESALE</a></li>
+                <li>
+                    <button>CLONE</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile_header">
+        <nav>
+            <ul>
+                <li>
+                    <button>
+                        <picture class="menu_icon">
+                            <source srcset="pictures/icons/menu.svg" media="(max-width: 960px)">
+                            <img src="pictures/icons/menu.svg" alt="menu">
+                        </picture>
+                    </button>
+                </li>
+                <li><a href="#">
+                    <picture>
+                        <source srcset="pictures/icons/icon.png" media="(max-width: 960px)">
+                        <img src="pictures/icons/icon.png" alt="logo">
+                    </picture>
+                </a></li>
+                <li>
+                    <button>
+                        <picture class="menu_icon">
+                            <source srcset="pictures/icons/people.png" media="(max-width: 960px)">
+                            <img src="pictures/icons/people.png" alt="">
+                        </picture>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
 <main>
     <section class="preview">
@@ -88,19 +122,19 @@
         </div>
         <div class="products">
             <div class="icons-container">
-                <picture class="icons">
+                <picture class="icons small_fire">
                     <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
                     <img src="pictures/icons/small_fire.png" alt="small_fire">
                 </picture>
-                <picture class="icons">
+                <picture class="icons big_fire">
                     <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
                     <img src="pictures/icons/big_fire.png" alt="big fire">
                 </picture>
-                <picture class="icons">
+                <picture class="icons big_fire">
                     <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
                     <img src="pictures/icons/big_fire.png" alt="big fire">
                 </picture>
-                <picture class="icons">
+                <picture class="icons small_fire">
                     <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
                     <img src="pictures/icons/small_fire.png" alt="small_fire">
                 </picture>
@@ -206,11 +240,6 @@
                 <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
             </picture>
             <p>download our media kit</p>
-            <picture>
-                <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
-            </picture>
-            <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
             <picture>
                 <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
                 <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
