@@ -12,7 +12,8 @@ body {
     width: 98%;
     border: black solid 0.12vw;;
     margin-left: 1%;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 button {
@@ -22,6 +23,7 @@ button {
     border: none;
     color: white;
 }
+
 h1,
 h2 {
     text-align: center;
