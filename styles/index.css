@@ -1,11 +1,11 @@
 header {
+    width: 97.8%;
     position: fixed;
     top: 0;
     margin-left: 0;
-    border-bottom: black solid 0.12vw;
+    border-bottom: solid 0.12vw;
     z-index: 99;
     background-color: white;
-    width: 97vw;
 }
 
 header nav {
@@ -31,8 +31,13 @@ header nav ul li a {
     font-size: 1vw;
     color: black;
 }
-header img{
+
+header img {
     width: 10vw;
+}
+
+.mobile_header {
+    display: none;
 }
 
 .preview {
@@ -40,7 +45,7 @@ header img{
     margin-top: 6%;
 }
 
-.left_column {
+.column_with_logo_and_cactus {
     width: 50%;
     float: left;
     display: inline-block;
@@ -61,17 +66,29 @@ header img{
 .scrolling_text {
     max-width: 100%;
     width: 100vw;
-    height: 11vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 7vw;
     border-bottom: 0.12vw solid black;
     border-top: black solid 0.12vw;
     font-size: 1vw;
+    overflow-x: hidden;
 }
+
 .scrolling_text img {
     width: 7vw;
-    height: 5vh
+    height: 5vw;
+}
+.scrolling_text_animation{
+    width: 100%;
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    white-space: nowrap;
+    animation-name: scrolling_animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
 .sauce_and_cactus-container {
@@ -87,7 +104,7 @@ header img{
     margin-top: 5%;
 }
 
-.right_column {
+.column_with_main_heading    {
     width: 50%;
     margin-right: 1%;
     float: right;
@@ -119,7 +136,8 @@ h1 {
 }
 
 .slogan {
-    width: 97vw;
+    max-width: 100%;
+    width: 98vw;
     height: 10vw;
     display: flex;
     justify-content: space-between;
@@ -127,9 +145,11 @@ h1 {
     border-top: black solid 0.12vw;
     border-bottom: black solid 0.12vw;
 }
-h2{
+
+h2 {
     font-size: 2.5vw;
 }
+
 .slogan img {
     width: 10vw;
     height: 7vw;
@@ -141,7 +161,7 @@ h2{
     justify-content: space-between;
 }
 
-.icons{
+.icons {
     width: 3.1vw;
     display: flex;
     flex-direction: column;
@@ -150,6 +170,7 @@ h2{
     margin-left: 2%;
     margin-right: 2%;
 }
+
 
 .product-container {
     display: flex;
@@ -173,28 +194,13 @@ h2{
     top: 14%;
     margin-bottom: 5%;
 }
+
 .text_on_sauce_2 {
     position: relative;
     display: flex;
     justify-content: center;
     font-size: 2vw;
     top: 13%;
-}
-
-.scrolling_text_2 {
-    max-width: 100%;
-    width: 100vw;
-    height: 11vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 0.12vw solid black;
-    border-top: black solid 0.12vw;
-    font-size: 1vw;
-}
-.scrolling_text_2 img {
-    width: 7vw;
-    height: 5vh;
 }
 
 .big_photo img {
@@ -219,14 +225,15 @@ h2{
 .story_column_left h2 {
     text-align: center;
     width: 50vw;
-    height: 20vh;
+    height: 10vw;
     font-size: 3.1vw;
     margin-top: 6%;
 }
-.story_column_left img{
+
+.story_column_left img {
     max-width: 100%;
     width: 50vw;
-    height: 65vh;
+    height: 35vw;
 }
 
 .story_column_right {
@@ -289,17 +296,19 @@ footer {
     background: #CDFD3B;
     border-top: black solid 0.12vw;
     margin-top: -0.21%;
-    width: 97vw;
+    width: 100%;
     height: 3vw;
 }
-footer a{
+
+footer a {
     display: flex;
     align-items: center;
     width: 1vw;
     margin-left: 2%;
 
 }
-footer address{
+
+footer address {
     display: flex;
     justify-content: space-around;
     align-items: center;
