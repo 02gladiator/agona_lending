@@ -30,6 +30,40 @@
         height: 5vw;
     }
 
+    .burger_menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        height: 200%;
+        margin-left: -3%;
+        z-index: 1;
+        background: lightgrey;
+        border: black solid 0.12vw;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        top: 6vw;
+        left: 7vw;
+        transform: scale(5);
+        opacity: 0;
+    }
+
+    .burger_menu_list {
+        display: grid;
+        gap: 1vw;
+        margin-top: 2%;
+    }
+
+    .burger_menu_list a {
+        font-size: 2.5vw;
+    }
+
+    .checkbox:checked ~ .burger_menu {
+        display: block;
+    }
+
     main {
         margin-top: 15vw;
     }
@@ -38,7 +72,7 @@
         display: grid;
     }
 
-    .left_column {
+    .column_with_logo_and_cactus {
         width: 100%;
         border: none;
     }
@@ -61,6 +95,10 @@
         height: 5vw;
     }
 
+    .scrolling_text_animation {
+        margin-top: 2%;
+    }
+
     .sauce_and_cactus-container img {
         max-width: 100%;
         width: 97vw;
@@ -68,7 +106,7 @@
         margin-top: 1%;
     }
 
-    .right_column {
+    .column_with_main_heading {
         width: 100%;
         border-top: black solid 0.12vw;
     }
@@ -119,7 +157,8 @@
     .small_fire {
         display: none;
     }
-    .big_fire{
+
+    .big_fire {
         position: absolute;
     }
 

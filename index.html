@@ -3,264 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <title>MyLanding</title>
-    <link rel="stylesheet" href="assets/fonts/font.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/adaptive.css">
     <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/animations.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
-<header>
-    <div class="desktop_header">
-        <nav>
-            <ul>
-                <li>
-                    <button>GO BACK</button>
-                </li>
-                <li><a href="#">STORY</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">
-                    <picture>
-                        <source srcset="pictures/icons/fire_icon.png" media="(min-width: 1080px)">
-                        <img src="pictures/icons/fire_icon.png" alt="logo">
-                    </picture>
-                </a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">WHOLESALE</a></li>
-                <li>
-                    <button>CLONE</button>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="mobile_header">
-        <nav>
-            <ul>
-                <li>
-                    <button>
-                        <picture class="menu_icon">
-                            <source srcset="pictures/icons/menu.svg" media="(max-width: 960px)">
-                            <img src="pictures/icons/menu.svg" alt="menu">
+    <header>
+        <div class="desktop_header">
+            <nav>
+                <ul>
+                    <li>
+                        <button>GO BACK</button>
+                    </li>
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">
+                        <picture>
+                            <source srcset="pictures/icons/fire_icon.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/fire_icon.png" alt="logo">
                         </picture>
-                    </button>
-                </li>
-                <li><a href="#">
-                    <picture>
-                        <source srcset="pictures/icons/icon.png" media="(max-width: 960px)">
-                        <img src="pictures/icons/icon.png" alt="logo">
-                    </picture>
-                </a></li>
-                <li>
-                    <button>
-                        <picture class="menu_icon">
-                            <source srcset="pictures/icons/people.png" media="(max-width: 960px)">
-                            <img src="pictures/icons/people.png" alt="">
+                    </a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">WHOLESALE</a></li>
+                    <li>
+                        <button>CLONE</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile_header">
+            <nav>
+                <ul>
+                    <li>
+                        <input id="checkbox" class="checkbox" type="checkbox">
+                        <label for="checkbox">
+                            <button>
+                                <picture class="menu_icon">
+                                    <source srcset="pictures/icons/menu.svg" media="(max-width: 960px)">
+                                    <img src="pictures/icons/menu.svg" alt="menu">
+                                </picture>
+                            </button>
+                        </label>
+                        <div class="burger_menu">
+                            <ul class="burger_menu_list">
+                                <li><a href="#">STORY</a></li>
+                                <li><a href="#">SHOP</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="#">WHOLESALE</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                        <picture>
+                            <source srcset="pictures/icons/icon.png" media="(max-width: 960px)">
+                            <img src="pictures/icons/icon.png" alt="logo">
                         </picture>
-                    </button>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-<main>
-    <section class="preview">
-        <div class="left_column">
-            <div class="logo-container">
+                    </a></li>
+                    <li>
+                        <button>
+                            <picture class="menu_icon">
+                                <source srcset="pictures/icons/people.png" media="(max-width: 960px)">
+                                <img src="pictures/icons/people.png" alt="">
+                            </picture>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="preview">
+            <div class="column_with_logo_and_cactus">
+                <div class="logo-container">
+                    <picture>
+                        <source srcset="pictures/icons/big_logo.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/big_logo.png" alt="big_logo">
+                    </picture>
+                </div>
+                <div class="scrolling_text">
+                    <div class="scrolling_text_animation">
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                        <p>put some fire in your belly</p>
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                        <p>put some fire in your belly</p>
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                    </div>
+                </div>
+                <div class="sauce_and_cactus-container">
+                    <picture>
+                        <source srcset="pictures/images/sauce_with_cactus.png" media="(min-width: 1080px)">
+                        <img src="pictures/images/sauce_with_cactus.png" alt="sauce_with_cactus">
+                    </picture>
+                </div>
+            </div>
+            <div class="column_with_main_heading">
+                <div class="main_info">
+                    <h1>THE FIRST HOT<br> SAUCE MADE FOR <br>COFFEE</h1>
+                </div>
+                <div class="sauce_and_hand-container">
+                    <picture>
+                        <source srcset="pictures/images/sauce_and_hand.png" media="(min-width: 1080px)">
+                        <img src="pictures/images/sauce_and_hand.png" alt="sauce_and_hand">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="slogan">
                 <picture>
+                    <source srcset="pictures/icons/scorpio_1.png" media="(min-width: 1080px)">
+                    <img src="pictures/icons/scorpio_1.png" alt="scorpio_1">
+                </picture>
+                <h2>THROW SOME LAVA IN<br>YOUR JAVA</h2>
+                <picture>
+                    <source srcset="pictures/icons/scorpio_2.png" media="(min-width: 1080px)">
+                    <img src="pictures/icons/scorpio_2.png" alt="scorpio_2">
+                </picture>
+            </div>
+            <div class="products">
+                <div class="icons-container">
+                    <picture class="icons small_fire">
+                        <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/small_fire.png" alt="small_fire">
+                    </picture>
+                    <picture class="icons big_fire">
+                        <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/big_fire.png" alt="big fire">
+                    </picture>
+                    <picture class="icons big_fire">
+                        <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/big_fire.png" alt="big fire">
+                    </picture>
+                    <picture class="icons small_fire">
+                        <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/small_fire.png" alt="small_fire">
+                    </picture>
+                </div>
+                <div class="product-container">
+                    <picture>
+                        <source srcset="pictures/images/LIGHT_ROAST.png" media="(min-width: 1080px)">
+                        <p class="text_on_sauce">tangy and tingly</p>
+                        <p class="text_on_sauce_2">LIGHT ROAST BLEND</p>
+                        <img src="pictures/images/LIGHT_ROAST.png" alt="light roast sauce">
+                    </picture>
+                    <picture>
+                        <p class="text_on_sauce">light & dark roast</p>
+                        <p class="text_on_sauce_2">UJJO SAMPLER PACK</p>
+                        <source srcset="pictures/images/PACK.png" media="(min-width: 1080px)">
+                        <img src="pictures/images/PACK.png" alt="light roast sauce and dark roast sauce">
+                    </picture>
+                    <picture>
+                        <p class="text_on_sauce">light & dark roast</p>
+                        <p class="text_on_sauce_2">UJJO SAMPLER PACK</p>
+                        <source srcset="pictures/images/DARK_ROAST.png" media="(min-width: 1080px)">
+                        <img src="pictures/images/DARK_ROAST.png" alt="dark roast sauce">
+                    </picture>
+                </div>
+            </div>
+            <div class="scrolling_text_and_big_photo">
+                <div class="scrolling_text">
+                    <div class="scrolling_text_animation">
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                        <p>put some fire in your belly</p>
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                        <p>put some fire in your belly</p>
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                        <p>put some fire in your belly</p>
+                        <picture>
+                            <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                            <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                        </picture>
+                    </div>
+                </div>
+                <picture class="big_photo">
+                    <source srcset="pictures/images/big_sauce.png" media="(min-width: 1080px)">
+                    <img src="pictures/images/big_sauce.png" alt="big_sauce">
+                </picture>
+            </div>
+        </section>
+        <section class="story">
+            <div class="story_column_left">
+                <h2>the story behind<br>the sauce</h2>
+                <picture>
+                    <source srcset="pictures/images/woman.png" media="(min-width: 1080px)">
+                    <img src="pictures/images/woman.png" alt="woman">
+                </picture>
+            </div>
+            <div class="story_column_right">
+                <picture>
+                    <source srcset="pictures/icons/background_for_text.png" media="(min-width: 1080px)">
+                    <img src="pictures/icons/background_for_text.png" alt="background_for_text">
+                </picture>
+                <p class="story_text">
+                    HELLO, I’M LAUREN AND AS A LIFELONG <br>
+                    ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY<br>
+                    THINGS, BUT I NEVER THOUGHT HOT SAUCE IN<br>
+                    COFFEE WAS A SANE OPTION UNTIL A FRIEND<br>
+                    DARED ME TO TRY IT.<br>
+                    <br>
+                    AND IT SUCKED<br>
+                    <br>
+                    BUT I WONDERED IF THERE WAS A WAY TO ADD<br>
+                    SPICE TO MY COFFEE. WHEN THERE WAS NO<br>
+                    EASY SOLUTION, UJJO WAS BORN.<br>
+                    <br>
+                    UJJO (OOO-JOE): THE WORD FOR “FIRE” IN<br>
+                    KONKANI, SPOKEN ON THE WEST COAST OF<br>
+                    INDIA, IS AN HOMAGE AND A LOVE LETTER TO MY<br>
+                    DAD, AN INDIAN IMMIGRANT WHO INSTILLED A<br>
+                    FIRE IN MY PALATE – AND MY HEART – FROM<br>
+                    THE VERY BEGINNING.
+                </p>
+            </div>
+        </section>
+        <section class="ending">
+            <div class="scrolling_text">
+                <div class="scrolling_text_animation">
+                    <picture>
+                        <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
+                    </picture>
+                    <p>download our media kit</p>
+                    <picture>
+                        <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
+                    </picture>
+                    <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
+                    <picture>
+                        <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
+                    </picture>
+                    <p>download our media kit</p>
+                    <picture>
+                        <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
+                        <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
+                    </picture>
+                </div>
+            </div>
+            <div class="ending-container">
+                <picture class="green_fire">
+                    <source srcset="pictures/icons/green_fire.png" media="(min-width: 1080px)">
+                    <img src="pictures/icons/green_fire.png" alt="green_fire">
+                </picture>
+                <picture class="logo">
                     <source srcset="pictures/icons/big_logo.png" media="(min-width: 1080px)">
                     <img src="pictures/icons/big_logo.png" alt="big_logo">
                 </picture>
-            </div>
-            <div class="scrolling_text">
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
-                </picture>
-
-                <p>put some fire in your belly</p>
-
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
+                <picture class="background_for_logo">
+                    <source srcset="pictures/icons/background_for_logo.png" media="(min-width: 1080px)">
+                    <img src="pictures/icons/background_for_logo.png" alt="background_for_logo">
                 </picture>
             </div>
-            <div class="sauce_and_cactus-container">
-                <picture>
-                    <source srcset="pictures/images/sauce_with_cactus.png" media="(min-width: 1080px)">
-                    <img src="pictures/images/sauce_with_cactus.png" alt="sauce_with_cactus">
-                </picture>
-            </div>
-        </div>
-        <div class="right_column">
-            <div class="main_info">
-                <h1>THE FIRST HOT<br> SAUCE MADE FOR <br>COFFEE</h1>
-            </div>
-            <div class="sauce_and_hand-container">
-                <picture>
-                    <source srcset="pictures/images/sauce_and_hand.png" media="(min-width: 1080px)">
-                    <img src="pictures/images/sauce_and_hand.png" alt="sauce_and_hand">
-                </picture>
-            </div>
-
-        </div>
-    </section>
-    <section class="catalog">
-        <div class="slogan">
-            <picture>
-                <source srcset="pictures/icons/scorpio_1.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/scorpio_1.png" alt="scorpio_1">
-            </picture>
-
-            <h2>THROW SOME LAVA IN<br>YOUR JAVA</h2>
-
-            <picture>
-                <source srcset="pictures/icons/scorpio_2.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/scorpio_2.png" alt="scorpio_2">
-            </picture>
-        </div>
-        <div class="products">
-            <div class="icons-container">
-                <picture class="icons small_fire">
-                    <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/small_fire.png" alt="small_fire">
-                </picture>
-                <picture class="icons big_fire">
-                    <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/big_fire.png" alt="big fire">
-                </picture>
-                <picture class="icons big_fire">
-                    <source srcset="pictures/icons/big_fire.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/big_fire.png" alt="big fire">
-                </picture>
-                <picture class="icons small_fire">
-                    <source srcset="pictures/icons/small_fire.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/small_fire.png" alt="small_fire">
-                </picture>
-            </div>
-            <div class="product-container">
-                <picture>
-                    <source srcset="pictures/images/LIGHT_ROAST.png" media="(min-width: 1080px)">
-                    <p class="text_on_sauce">tangy and tingly</p>
-                    <p class="text_on_sauce_2">LIGHT ROAST BLEND</p>
-                    <img src="pictures/images/LIGHT_ROAST.png" alt="light roast sauce">
-                </picture>
-                <picture>
-                    <p class="text_on_sauce">light & dark roast</p>
-                    <p class="text_on_sauce_2">UJJO SAMPLER PACK</p>
-                    <source srcset="pictures/images/PACK.png" media="(min-width: 1080px)">
-                    <img src="pictures/images/PACK.png" alt="light roast sauce and dark roast sauce">
-                </picture>
-                <picture>
-                    <p class="text_on_sauce">light & dark roast</p>
-                    <p class="text_on_sauce_2">UJJO SAMPLER PACK</p>
-                    <source srcset="pictures/images/DARK_ROAST.png" media="(min-width: 1080px)">
-                    <img src="pictures/images/DARK_ROAST.png" alt="dark roast sauce">
-                </picture>
-            </div>
-        </div>
-        <div>
-            <div class="scrolling_text">
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
-                </picture>
-                <p>put some fire in your belly</p>
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
-                </picture>
-                <p>put some fire in your belly</p>
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
-                </picture>
-                <p>put some fire in your belly</p>
-                <picture>
-                    <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                    <img src="pictures/icons/chilli_pepper.png" alt="chilli_pepper">
-                </picture>
-            </div>
-            <picture class="big_photo">
-                <source srcset="pictures/images/big_sauce.png" media="(min-width: 1080px)">
-                <img src="pictures/images/big_sauce.png" alt="big_sauce">
-            </picture>
-        </div>
-    </section>
-    <section class="story">
-        <div class="story_column_left">
-            <h2>the story behind<br>the sauce</h2>
-            <picture>
-                <source srcset="pictures/images/woman.png" media="(min-width: 1080px)">
-                <img src="pictures/images/woman.png" alt="woman">
-            </picture>
-        </div>
-        <div class="story_column_right">
-            <picture>
-                <source srcset="pictures/icons/background_for_text.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/background_for_text.png" alt="background_for_text">
-            </picture>
-            <p class="story_text">
-                HELLO, I’M LAUREN AND AS A LIFELONG <br>
-                ADVENTUROUS EATER, I’VE TRIED A LOT OF CRAZY<br>
-                THINGS, BUT I NEVER THOUGHT HOT SAUCE IN<br>
-                COFFEE WAS A SANE OPTION UNTIL A FRIEND<br>
-                DARED ME TO TRY IT.<br>
-                <br>
-                AND IT SUCKED<br>
-                <br>
-                BUT I WONDERED IF THERE WAS A WAY TO ADD<br>
-                SPICE TO MY COFFEE. WHEN THERE WAS NO<br>
-                EASY SOLUTION, UJJO WAS BORN.<br>
-                <br>
-                UJJO (OOO-JOE): THE WORD FOR “FIRE” IN<br>
-                KONKANI, SPOKEN ON THE WEST COAST OF<br>
-                INDIA, IS AN HOMAGE AND A LOVE LETTER TO MY<br>
-                DAD, AN INDIAN IMMIGRANT WHO INSTILLED A<br>
-                FIRE IN MY PALATE – AND MY HEART – FROM<br>
-                THE VERY BEGINNING.
-            </p>
-        </div>
-    </section>
-    <section class="ending">
-        <div class="scrolling_text">
-            <picture>
-                <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
-            </picture>
-            <p>download our media kit</p>
-            <picture>
-                <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
-            </picture>
-            <p>CONTACT FOR PARTNERSHIP OPPORTUNITIES</p>
-            <picture>
-                <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
-            </picture>
-            <p>download our media kit</p>
-            <picture>
-                <source srcset="pictures/icons/chilli_pepper.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/chilli_pepper.png" alt="chilli pepper">
-            </picture>
-        </div>
-        <div class="ending-container">
-            <picture class="green_fire">
-                <source srcset="pictures/icons/green_fire.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/green_fire.png" alt="green_fire">
-            </picture>
-            <picture class="logo">
-                <source srcset="pictures/icons/big_logo.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/big_logo.png" alt="big_logo">
-            </picture>
-            <picture class="background_for_logo">
-                <source srcset="pictures/icons/background_for_logo.png" media="(min-width: 1080px)">
-                <img src="pictures/icons/background_for_logo.png" alt="background_for_logo">
-            </picture>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 <footer>
     <a href="#">PRIVACY</a>
     <address>
