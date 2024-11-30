@@ -10,6 +10,12 @@
     --default-border: 1px solid black;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .scrolling_text_animation{
+        animation: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: lightgray;
