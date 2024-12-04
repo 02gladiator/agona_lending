@@ -262,3 +262,34 @@
         width: 65vw;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .scrolling_text_animation{
+        animation: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: gray;
+    }
+    .svg_picture,
+    .small_fire,
+    .big_fire{
+        filter: invert();
+    }
+
+    header {
+        background-color: gray;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+
+    header {
+        background-color: white;
+    }
+}
