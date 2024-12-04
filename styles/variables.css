@@ -10,28 +10,3 @@
     --default-border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .scrolling_text_animation{
-        animation: none;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: lightgray;
-    }
-
-    header {
-        background-color: lightgray;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-    }
-
-    header {
-        background-color: white;
-    }
-}
